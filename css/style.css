@@ -1,0 +1,141 @@
+:root{
+    --txt-branco: #FFF;
+    --txt-cinza: #C0C0C0;
+    --btn-azul: #167BF7;
+    --back-preto: #00030C;
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: local(Inter), url(../font/Inter/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter Bold";
+    src: local(Inter), url(../font/Inter/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: "Inter Light";
+    src: local(Inter), url(../font/Inter/Inter-Light.ttf);
+}
+
+body{
+    width: 100% !important;
+    overflow-x: hidden;
+    font-family: "Inter Regular", sans-serif;
+    background-color: var(--back-preto);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.principal{
+    height: 42rem;
+    width: 100%;
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+.principal-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principal-content > *{
+    margin-top: 2%;
+}
+h1, h2, h3{
+    font-family: "Inter Bold", sans-serif;
+    color: var(--txt-branco);
+    text-align: center;
+}
+h1{
+    font-size: 1.6rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+.principal-content a{
+    color: var(--txt-branco);
+    width: 70%;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2%;
+}
+.content__btn-principal{
+    background-color: var(--btn-azul);
+}
+.content__btn-secundario{
+    border: 1px solid var(--txt-branco);
+}
+.principal-content p{
+    font-family: "Inter Light", sans-serif;
+    font-size: .8rem;
+    text-align: center;
+    color: var(--txt-cinza);
+}
+
+.secundario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 5rem 6rem 0;
+}
+.secundario__descricao{
+    padding: 2rem;
+}
+.secundario__descricao .descricao__titulo{
+    font-family: "Inter Bold", sans-serif;
+    font-size: 2.85rem;
+    color: var(--txt-branco);
+}
+.secundario__descricao .descricao__texto{
+    color: var(--txt-cinza);
+    margin-top: 2%;
+}
+.secundario__descricao .descricao__btn{
+    color: var(--txt-branco);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2%;
+    background-color: var(--btn-azul);
+    display: inline-block;
+}
+
+.dispositivos{
+    margin: 5rem 0;
+    text-align: center;
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer{
+    text-align: center;
+}
+.footer__lista {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-evenly;
+}
+.footer__link a{
+    text-decoration: none;
+    color: var(--txt-branco);
+}
+footer p{
+    margin: 2rem 5%;
+    font-family: "Inter Light";
+    font-size: .8rem;
+    color: var(--txt-cinza);
+}
